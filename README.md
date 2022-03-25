@@ -1,4 +1,4 @@
-# Feature-selection-Multivariate-Regression-Sales-SAS-Miner
+# Feature-selection-Multivariate-Regression-Price-SAS-Miner
 
 
 Dataset: data.csv (House Price Prediction: https://www.kaggle.com/datasets/shree1992/housedata)
@@ -6,7 +6,7 @@ Dataset: data.csv (House Price Prediction: https://www.kaggle.com/datasets/shree
 **Steps:**
 
 Create Diagram
-Drag File Import node from sample and import supermarket_sales.csv
+Drag File Import node from sample and import data.csv
 Edit Variables, set  as Target
 Select Input features
 Drag data partition node from sample
