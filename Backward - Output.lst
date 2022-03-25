@@ -1,0 +1,365 @@
+*------------------------------------------------------------*
+User:                u59396733
+Date:                March 25, 2022
+Time:                20:01:12
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+ Role        Level         Count
+ 
+INPUT      INTERVAL          12
+TARGET     INTERVAL           1
+ 
+ 
+ 
+ 
+Predicted and decision variables
+ 
+Type         Variable         Label
+ 
+TARGET       price
+PREDICTED    P_price     Predicted: price
+RESIDUAL     R_price     Residual: price
+ 
+ 
+ 
+ 
+ 
+The DMREG Procedure
+ 
+               Model Information
+ 
+Training Data Set             WORK.EM_DMREG.VIEW
+DMDB Catalog                  WORK.REG2_DMDB
+Target Variable               price
+Target Measurement Level      Interval
+Error                         Normal
+Link Function                 Identity
+Number of Model Parameters    13
+Number of Observations        2760
+ 
+ 
+ 
+ 
+Backward Elimination Procedure
+ 
+ 
+Step 0: The following effects were entered.
+ 
+Intercept  bathrooms  bedrooms  condition  floors  sqft_above  sqft_basement  sqft_living  sqft_lot  view  waterfront  yr_built  yr_renovated
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                  11    2.0912813E14    1.9011649E13     160.50    <.0001
+Error                2748    3.2550201E14    118450514091
+Corrected Total      2759    5.3463015E14
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.3912     Adj R-Sq        0.3887
+AIC         70385.7945     BIC         70387.8993
+SBC         70456.8703     C(p)           12.0000
+ 
+ 
+             Analysis of Maximum Likelihood Estimates
+ 
+                                   Standard
+Parameter        DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept         1     5202893      626581       8.30      <.0001
+bathrooms         1     70462.0     15139.5       4.65      <.0001
+bedrooms          1    -71291.5      9402.2      -7.58      <.0001
+condition         1     20998.0     11702.1       1.79      0.0729
+floors            1     59677.2     16583.5       3.60      0.0003
+sqft_above        1       273.4     12.1965      22.41      <.0001
+sqft_basement     1       267.6     19.2670      13.89      <.0001
+sqft_living       0           0           .        .         .
+sqft_lot          1     -0.6034      0.1735      -3.48      0.0005
+view              1     30675.6      9881.5       3.10      0.0019
+waterfront        1      295269     81581.7       3.62      0.0003
+yr_built          1     -2702.1       312.3      -8.65      <.0001
+yr_renovated      1     16.4055      7.6643       2.14      0.0324
+ 
+NOTE: Effect sqft_living was removed because of its redundancy.
+ 
+ 
+Step 1: Effect condition removed.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                  10    2.0874675E14    2.0874675E13     176.09    <.0001
+Error                2749     3.258834E14    118546162550
+Corrected Total      2759    5.3463015E14
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.3905     Adj R-Sq        0.3882
+AIC         70387.0265     BIC         70389.0967
+SBC         70452.1793     C(p)           13.2198
+ 
+ 
+             Analysis of Maximum Likelihood Estimates
+ 
+                                   Standard
+Parameter        DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept         1     5737765      551359      10.41      <.0001
+bathrooms         1     71966.4     15122.4       4.76      <.0001
+bedrooms          1    -70390.6      9392.6      -7.49      <.0001
+floors            1     56086.5     16468.9       3.41      0.0007
+sqft_above        1       272.5     12.1922      22.35      <.0001
+sqft_basement     1       269.0     19.2592      13.97      <.0001
+sqft_lot          1     -0.5976      0.1735      -3.44      0.0006
+view              1     30761.7      9885.3       3.11      0.0019
+waterfront        1      296673     81610.9       3.64      0.0003
+yr_built          1     -2934.5       284.3     -10.32      <.0001
+yr_renovated      1     11.2867      7.1166       1.59      0.1129
+ 
+ 
+Step 2: Effect yr_renovated removed.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   9    2.0844856E14    2.3160952E13     195.27    <.0001
+Error                2750    3.2618158E14    118611484884
+Corrected Total      2759    5.3463015E14
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.3899     Adj R-Sq        0.3879
+AIC         70387.5507     BIC         70389.5962
+SBC         70446.7806     C(p)           13.7372
+ 
+ 
+             Analysis of Maximum Likelihood Estimates
+ 
+                                   Standard
+Parameter        DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept         1     5923752      538892      10.99      <.0001
+bathrooms         1     70461.6     15096.7       4.67      <.0001
+bedrooms          1    -70534.4      9394.7      -7.51      <.0001
+floors            1     53824.2     16411.6       3.28      0.0011
+sqft_above        1       273.5     12.1808      22.45      <.0001
+sqft_basement     1       269.6     19.2610      14.00      <.0001
+sqft_lot          1     -0.6008      0.1736      -3.46      0.0005
+view              1     31219.9      9883.8       3.16      0.0016
+waterfront        1      296172     81632.7       3.63      0.0003
+yr_built          1     -3021.6       279.0     -10.83      <.0001
+ 
+ 
+NOTE: No (additional) effects met the 0.05 significance level for removal from the model.
+ 
+ 
+                Summary of Backward Elimination
+ 
+            Effect                  Number
+    Step    Removed           DF        In    F Value    Pr > F
+ 
+       1    condition          1        10       3.22    0.0729
+       2    yr_renovated       1         9       2.52    0.1129
+ 
+ 
+The selected model is the model trained in the last step (Step 2). It consists of the following effects:
+ 
+Intercept  bathrooms  bedrooms  floors  sqft_above  sqft_basement  sqft_lot  view  waterfront  yr_built
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   9    2.0844856E14    2.3160952E13     195.27    <.0001
+Error                2750    3.2618158E14    118611484884
+Corrected Total      2759    5.3463015E14
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.3899     Adj R-Sq        0.3879
+AIC         70387.5507     BIC         70389.5962
+SBC         70446.7806     C(p)           13.7372
+ 
+ 
+             Analysis of Maximum Likelihood Estimates
+ 
+                                   Standard
+Parameter        DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept         1     5923752      538892      10.99      <.0001
+bathrooms         1     70461.6     15096.7       4.67      <.0001
+bedrooms          1    -70534.4      9394.7      -7.51      <.0001
+floors            1     53824.2     16411.6       3.28      0.0011
+sqft_above        1       273.5     12.1808      22.45      <.0001
+sqft_basement     1       269.6     19.2610      14.00      <.0001
+sqft_lot          1     -0.6008      0.1736      -3.46      0.0005
+view              1     31219.9      9883.8       3.16      0.0016
+waterfront        1      296172     81632.7       3.63      0.0003
+yr_built          1     -3021.6       279.0     -10.83      <.0001
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Fit Statistics
+ 
+Target=price Target Label=' '
+ 
+   Fit
+Statistics    Statistics Label                            Train        Validation           Test
+ 
+ _AIC_        Akaike's Information Criterion           70387.55               .              .
+ _ASE_        Average Squared Error             118181733127.37    70574323630.75    1.574173E12
+ _AVERR_      Average Error Function            118181733127.37    70574323630.75    1.574173E12
+ _DFE_        Degrees of Freedom for Error              2750.00               .              .
+ _DFM_        Model Degrees of Freedom                    10.00               .              .
+ _DFT_        Total Degrees of Freedom                  2760.00               .              .
+ _DIV_        Divisor for ASE                           2760.00           1380.00         460.00
+ _ERR_        Error Function                    326181583431554    97392566610435    7.241196E14
+ _FPE_        Final Prediction Error            119041236641.03               .              .
+ _MAX_        Maximum Absolute Error                12277601.71        2832763.01    26384171.31
+ _MSE_        Mean Square Error                 118611484884.20    70574323630.75    1.574173E12
+ _NOBS_       Sum of Frequencies                        2760.00           1380.00         460.00
+ _NW_         Number of Estimate Weights                  10.00               .              .
+ _RASE_       Root Average Sum of Squares             343775.70         265658.28     1254660.49
+ _RFPE_       Root Final Prediction Error             345023.53               .              .
+ _RMSE_       Root Mean Squared Error                 344400.18         265658.28     1254660.49
+ _SBC_        Schwarz's Bayesian Criterion             70446.78               .              .
+ _SSE_        Sum of Squared Errors             326181583431554    97392566610435    7.241196E14
+ _SUMW_       Sum of Case Weights Times Freq            2760.00           1380.00         460.00
+ 
+ 
+ 
+ 
+Assessment Score Rankings
+ 
+Data Role=TRAIN Target Variable=price Target Label=' '
+ 
+           Number of        Mean          Mean
+Depth    Observations      Target       Predicted
+ 
+   5          138        1377599.95    1322690.36
+  10          138         888739.87     959821.63
+  15          138         814839.56     835910.60
+  20          138         701280.62     749385.76
+  25          138         681852.25     691153.79
+  30          138         597588.88     644819.41
+  35          138         644035.39     607234.13
+  40          138         515654.13     570536.42
+  45          138         510670.52     538027.96
+  50          138         495287.56     509255.79
+  55          138         459196.08     478581.00
+  60          138         431868.86     451819.82
+  65          138         397254.90     426048.75
+  70          138         444679.93     402572.65
+  75          138         375933.99     378757.05
+  80          138         372487.13     350961.50
+  85          138         354789.53     320512.71
+  90          138         318618.91     289503.86
+  95          138         311503.49     245811.72
+ 100          138         262425.24     182901.88
+ 
+ 
+Data Role=VALIDATE Target Variable=price Target Label=' '
+ 
+           Number of        Mean          Mean
+Depth    Observations      Target       Predicted
+ 
+   5          69         1355385.91    1339074.42
+  10          69          965372.99     967423.23
+  15          69          733936.87     825502.25
+  20          69          771467.82     745988.39
+  25          69          683106.86     695268.02
+  30          69          530029.71     644428.47
+  35          69          539940.45     598401.40
+  40          69          542068.48     567267.18
+  45          69          488875.48     534783.25
+  50          69          474218.80     506164.23
+  55          69          438789.63     482428.74
+  60          69          413577.07     453720.39
+  65          69          391907.46     427618.99
+  70          69          394207.44     398706.14
+  75          69          397134.24     371555.14
+  80          69          371816.04     343993.14
+  85          69          339359.65     311228.72
+  90          69          335190.87     278949.00
+  95          69          313466.69     239938.60
+ 100          69          298109.83     175540.48
+ 
+ 
+ 
+ 
+Assessment Score Distribution
+ 
+Data Role=TRAIN Target Variable=price Target Label=' '
+ 
+                                 Mean          Mean         Number of        Model
+   Range for Predicted          Target       Predicted    Observations       Score
+ 
+3050623.417 -  3206512.404    5865250.00    3172956.07           2        3128567.91
+2582956.459 -  2738845.445    2888000.00    2629114.36           1        2660900.95
+1959400.515 -  2115289.501    3019444.00    1979851.45           2        2037345.01
+1803511.529 -  1959400.515    1646600.00    1848035.76           6        1881456.02
+1647622.543 -  1803511.529    1584375.00    1735884.65           4        1725567.04
+1491733.557 -  1647622.543    1570976.92    1566108.41          13        1569678.05
+1335844.571 -  1491733.557    1410599.00    1394062.66          19        1413789.06
+1179955.585 -  1335844.571    1207767.20    1238135.15          31        1257900.08
+1024066.599 -  1179955.585    1112902.85    1090990.17          77        1102011.09
+868177.613 -  1024066.599      884612.80     936027.92         148         946122.11
+712288.627 -  868177.613       736079.34     782664.49         251         790233.12
+556399.641 -  712288.627       611734.36     629065.87         543         634344.13
+400510.654 -  556399.641       458488.65     473171.13         784         478455.15
+244621.668 -  400510.654       358423.32     331498.16         674         322566.16
+88732.682 -  244621.668        272461.88     199069.31         205         166677.18
+ 
+ 
+Data Role=VALIDATE Target Variable=price Target Label=' '
+ 
+                                    Mean       Mean         Number of        Model
+   Range for Predicted            Target     Predicted    Observations       Score
+ 
+3556454.663 -  3741676.723    2280000.00    3741676.72           1        3649065.69
+2074678.184 -  2259900.244          0.00    2252987.51           1        2167289.21
+1889456.125 -  2074678.184    2650000.00    1974289.90           2        1982067.15
+1704234.065 -  1889456.125    3200000.00    1860081.04           1        1796845.09
+1519012.005 -  1704234.065    2100666.67    1610029.03           6        1611623.03
+1333789.945 -  1519012.005    1525750.00    1400698.43          12        1426400.98
+1148567.886 -  1333789.945    1099728.85    1235617.48          27        1241178.92
+963345.826 -  1148567.886     1065331.79    1039779.50          53        1055956.86
+778123.766 -  963345.826       797362.92     859289.69         104         870734.80
+592901.706 -  778123.766       640943.91     679514.00         251         685512.74
+407679.646 -  592901.706       459744.02     497884.97         452         500290.68
+222457.587 -  407679.646       359432.64     323589.33         392         315068.62
+37235.527 -  222457.587        299058.70     180687.22          78         129846.56

@@ -1,0 +1,539 @@
+*------------------------------------------------------------*
+User:                u59396733
+Date:                March 25, 2022
+Time:                19:51:12
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+ Role        Level         Count
+ 
+INPUT      INTERVAL          12
+TARGET     INTERVAL           1
+ 
+ 
+ 
+ 
+Predicted and decision variables
+ 
+Type         Variable         Label
+ 
+TARGET       price
+PREDICTED    P_price     Predicted: price
+RESIDUAL     R_price     Residual: price
+ 
+ 
+ 
+ 
+ 
+The DMREG Procedure
+ 
+               Model Information
+ 
+Training Data Set             WORK.EM_DMREG.VIEW
+DMDB Catalog                  WORK.REG2_DMDB
+Target Variable               price
+Target Measurement Level      Interval
+Error                         Normal
+Link Function                 Identity
+Number of Model Parameters    13
+Number of Observations        2760
+ 
+ 
+ 
+ 
+Forward Selection Procedure
+ 
+ 
+Step 0: Intercept entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   0               0               .        .       .
+Error                2759    5.3463015E14    193776783966
+Corrected Total      2759    5.3463015E14
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.0000     Adj R-Sq        0.0000
+AIC         71733.3246     BIC         71734.2457
+SBC         71739.2476     C(p)         1755.5317
+ 
+ 
+             Analysis of Maximum Likelihood Estimates
+ 
+                                   Standard
+Parameter        DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept         1      547815      8379.1      65.38      <.0001
+ 
+ 
+Step 1: Effect sqft_living entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   1    1.7908469E14    1.7908469E14    1389.18    <.0001
+Error                2758    3.5554545E14    128914232587
+Corrected Total      2759    5.3463015E14
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.3350     Adj R-Sq        0.3347
+AIC         70609.4596     BIC         70611.1246
+SBC         70621.3056     C(p)          245.6371
+ 
+ 
+             Analysis of Maximum Likelihood Estimates
+ 
+                                   Standard
+Parameter        DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept         1    -20917.4     16719.7      -1.25      0.2110
+sqft_living       1       265.3      7.1169      37.27      <.0001
+ 
+ 
+Step 2: Effect yr_built entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   2    1.8960565E14    9.4802825E13     757.54    <.0001
+Error                2757     3.450245E14    125144902506
+Corrected Total      2759    5.3463015E14
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.3546     Adj R-Sq        0.3542
+AIC         70528.5556     BIC         70530.2353
+SBC         70546.3245     C(p)          158.8155
+ 
+ 
+             Analysis of Maximum Likelihood Estimates
+ 
+                                   Standard
+Parameter        DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept         1     4219437      462761       9.12      <.0001
+sqft_living       1       284.1      7.3085      38.88      <.0001
+yr_built          1     -2171.9       236.9      -9.17      <.0001
+ 
+ 
+Step 3: Effect bedrooms entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   3    1.9610698E14    6.5368993E13     532.18    <.0001
+Error                2756    3.3852317E14    122831338316
+Corrected Total      2759    5.3463015E14
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.3668     Adj R-Sq        0.3661
+AIC         70478.0524     BIC         70479.7760
+SBC         70501.7444     C(p)          105.9291
+ 
+ 
+             Analysis of Maximum Likelihood Estimates
+ 
+                                   Standard
+Parameter        DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept         1     4479045      459850       9.74      <.0001
+bedrooms          1    -66871.2      9191.6      -7.28      <.0001
+sqft_living       1       322.0      8.9153      36.12      <.0001
+yr_built          1     -2229.4       234.8      -9.49      <.0001
+ 
+ 
+Step 4: Effect bathrooms entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   4    2.0098683E14    5.0246708E13     414.90    <.0001
+Error                2755    3.3364332E14    121104651674
+Corrected Total      2759    5.3463015E14
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.3759     Adj R-Sq        0.3750
+AIC         70439.9771     BIC         70441.7749
+SBC         70469.5921     C(p)           66.7317
+ 
+ 
+             Analysis of Maximum Likelihood Estimates
+ 
+                                   Standard
+Parameter        DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept         1     5785508      500848      11.55      <.0001
+bathrooms         1     91908.7     14478.8       6.35      <.0001
+bedrooms          1    -79614.4      9345.0      -8.52      <.0001
+sqft_living       1       278.9     11.1531      25.01      <.0001
+yr_built          1     -2924.3       257.6     -11.35      <.0001
+ 
+ 
+Step 5: Effect waterfront entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   5    2.0407556E14    4.0815111E13     340.05    <.0001
+Error                2754    3.3055459E14    120027084912
+Corrected Total      2759    5.3463015E14
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.3817     Adj R-Sq        0.3806
+AIC         70416.3073     BIC         70418.1752
+SBC         70451.8452     C(p)           42.6556
+ 
+ 
+             Analysis of Maximum Likelihood Estimates
+ 
+                                   Standard
+Parameter        DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept         1     5582888      500212      11.16      <.0001
+bathrooms         1     89739.1     14420.6       6.22      <.0001
+bedrooms          1    -73962.3      9369.8      -7.89      <.0001
+sqft_living       1       272.1     11.1853      24.32      <.0001
+waterfront        1      391316     77139.6       5.07      <.0001
+yr_built          1     -2822.9       257.2     -10.98      <.0001
+ 
+ 
+Step 6: Effect floors entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   6    2.0586279E14    3.4310465E13     287.31    <.0001
+Error                2753    3.2876736E14    119421488925
+Corrected Total      2759    5.3463015E14
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.3851     Adj R-Sq        0.3837
+AIC         70403.3441     BIC         70405.2655
+SBC         70444.8050     C(p)           29.5672
+ 
+ 
+             Analysis of Maximum Likelihood Estimates
+ 
+                                   Standard
+Parameter        DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept         1     6191402      523156      11.83      <.0001
+bathrooms         1     75334.6     14858.3       5.07      <.0001
+bedrooms          1    -71405.5      9369.5      -7.62      <.0001
+floors            1     57393.4     14835.9       3.87      0.0001
+sqft_living       1       271.6     11.1577      24.34      <.0001
+waterfront        1      388217     76949.0       5.05      <.0001
+yr_built          1     -3164.0       271.3     -11.66      <.0001
+ 
+ 
+Step 7: Effect sqft_lot entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   7    2.0725525E14    2.9607893E13     248.89    <.0001
+Error                2752     3.273749E14    118958901004
+Corrected Total      2759    5.3463015E14
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.3877     Adj R-Sq        0.3861
+AIC         70393.6295     BIC         70395.6075
+SBC         70441.0134     C(p)           19.8115
+ 
+ 
+             Analysis of Maximum Likelihood Estimates
+ 
+                                   Standard
+Parameter        DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept         1     6128229      522468      11.73      <.0001
+bathrooms         1     72252.3     14856.9       4.86      <.0001
+bedrooms          1    -73160.3      9365.3      -7.81      <.0001
+floors            1     54509.4     14831.1       3.68      0.0002
+sqft_living       1       280.0     11.4008      24.56      <.0001
+sqft_lot          1     -0.5914      0.1729      -3.42      0.0006
+waterfront        1      384866     76806.0       5.01      <.0001
+yr_built          1     -3127.7       271.0     -11.54      <.0001
+ 
+ 
+Step 8: Effect view entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   8    2.0844366E14    2.6055458E13     219.75    <.0001
+Error                2751    3.2618649E14    118570151128
+Corrected Total      2759    5.3463015E14
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.3899     Adj R-Sq        0.3881
+AIC         70385.5922     BIC         70387.6328
+SBC         70438.8991     C(p)           11.7786
+ 
+ 
+             Analysis of Maximum Likelihood Estimates
+ 
+                                   Standard
+Parameter        DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept         1     5900524      526549      11.21      <.0001
+bathrooms         1     69912.9     14851.0       4.71      <.0001
+bedrooms          1    -70615.9      9384.5      -7.52      <.0001
+floors            1     55261.2     14808.7       3.73      0.0002
+sqft_living       1       272.7     11.6104      23.49      <.0001
+sqft_lot          1     -0.5971      0.1726      -3.46      0.0005
+view              1     30909.0      9763.1       3.17      0.0016
+waterfront        1      296489     81603.7       3.63      0.0003
+yr_built          1     -3010.0       273.1     -11.02      <.0001
+ 
+ 
+NOTE: No (additional) effects met the 0.05 significance level for entry into the model.
+ 
+ 
+                 Summary of Forward Selection
+ 
+            Effect                 Number
+    Step    Entered          DF        In    F Value    Pr > F
+ 
+       1    sqft_living       1         1    1389.18    <.0001
+       2    yr_built          1         2      84.07    <.0001
+       3    bedrooms          1         3      52.93    <.0001
+       4    bathrooms         1         4      40.29    <.0001
+       5    waterfront        1         5      25.73    <.0001
+       6    floors            1         6      14.97    0.0001
+       7    sqft_lot          1         7      11.71    0.0006
+       8    view              1         8      10.02    0.0016
+ 
+ 
+The selected model is the model trained in the last step (Step 8). It consists of the following effects:
+ 
+Intercept  bathrooms  bedrooms  floors  sqft_living  sqft_lot  view  waterfront  yr_built
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   8    2.0844366E14    2.6055458E13     219.75    <.0001
+Error                2751    3.2618649E14    118570151128
+Corrected Total      2759    5.3463015E14
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.3899     Adj R-Sq        0.3881
+AIC         70385.5922     BIC         70387.6328
+SBC         70438.8991     C(p)           11.7786
+ 
+ 
+             Analysis of Maximum Likelihood Estimates
+ 
+                                   Standard
+Parameter        DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept         1     5900524      526549      11.21      <.0001
+bathrooms         1     69912.9     14851.0       4.71      <.0001
+bedrooms          1    -70615.9      9384.5      -7.52      <.0001
+floors            1     55261.2     14808.7       3.73      0.0002
+sqft_living       1       272.7     11.6104      23.49      <.0001
+sqft_lot          1     -0.5971      0.1726      -3.46      0.0005
+view              1     30909.0      9763.1       3.17      0.0016
+waterfront        1      296489     81603.7       3.63      0.0003
+yr_built          1     -3010.0       273.1     -11.02      <.0001
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Fit Statistics
+ 
+Target=price Target Label=' '
+ 
+   Fit
+Statistics    Statistics Label                            Train        Validation           Test
+ 
+ _AIC_        Akaike's Information Criterion           70385.59               .              .
+ _ASE_        Average Squared Error             118183509330.61    70618011805.63    1.574241E12
+ _AVERR_      Average Error Function            118183509330.61    70618011805.63    1.574241E12
+ _DFE_        Degrees of Freedom for Error              2751.00               .              .
+ _DFM_        Model Degrees of Freedom                     9.00               .              .
+ _DFT_        Total Degrees of Freedom                  2760.00               .              .
+ _DIV_        Divisor for ASE                           2760.00           1380.00         460.00
+ _ERR_        Error Function                    326186485752475    97452856291772    7.241509E14
+ _FPE_        Final Prediction Error            118956792924.92               .              .
+ _MAX_        Maximum Absolute Error                12277371.17        2836516.02    26384983.69
+ _MSE_        Mean Square Error                 118570151127.76    70618011805.63    1.574241E12
+ _NOBS_       Sum of Frequencies                        2760.00           1380.00         460.00
+ _NW_         Number of Estimate Weights                   9.00               .              .
+ _RASE_       Root Average Sum of Squares             343778.29         265740.50     1254687.65
+ _RFPE_       Root Final Prediction Error             344901.14               .              .
+ _RMSE_       Root Mean Squared Error                 344340.17         265740.50     1254687.65
+ _SBC_        Schwarz's Bayesian Criterion             70438.90               .              .
+ _SSE_        Sum of Squared Errors             326186485752475    97452856291772    7.241509E14
+ _SUMW_       Sum of Case Weights Times Freq            2760.00           1380.00         460.00
+ 
+ 
+ 
+ 
+Assessment Score Rankings
+ 
+Data Role=TRAIN Target Variable=price Target Label=' '
+ 
+           Number of        Mean          Mean
+Depth    Observations      Target       Predicted
+ 
+   5          138        1366621.69    1322433.18
+  10          138         896457.26     959957.94
+  15          138         818354.05     835719.05
+  20          138         695700.91     749415.85
+  25          138         683910.77     691000.67
+  30          138         597356.46     644732.32
+  35          138         647535.39     607347.79
+  40          138         516835.65     570568.51
+  45          138         508184.65     538078.35
+  50          138         498215.10     509365.53
+  55          138         460280.82     478644.77
+  60          138         427443.53     451978.58
+  65          138         410516.13     426129.60
+  70          138         432074.49     402778.38
+  75          138         377020.94     378784.63
+  80          138         372845.83     350957.00
+  85          138         351538.95     320683.31
+  90          138         321219.13     289307.00
+  95          138         314144.79     245656.54
+ 100          138         260050.24     182767.80
+ 
+ 
+Data Role=VALIDATE Target Variable=price Target Label=' '
+ 
+           Number of        Mean          Mean
+Depth    Observations      Target       Predicted
+ 
+   5          69         1349369.97    1339142.62
+  10          69          970432.41     967250.09
+  15          69          738610.78     825521.52
+  20          69          766176.02     746028.93
+  25          69          677166.77     695419.92
+  30          69          536890.58     644489.83
+  35          69          533927.41     598379.02
+  40          69          549104.71     567208.89
+  45          69          488194.32     534838.12
+  50          69          474859.38     506163.29
+  55          69          438098.32     482495.45
+  60          69          409136.49     453945.11
+  65          69          401992.97     427767.24
+  70          69          387504.54     398690.22
+  75          69          398076.27     371567.85
+  80          69          372294.30     343939.24
+  85          69          339359.65     311273.20
+  90          69          337324.00     278746.71
+  95          69          311333.56     239678.95
+ 100          69          298109.83     175337.95
+ 
+ 
+ 
+ 
+Assessment Score Distribution
+ 
+Data Role=TRAIN Target Variable=price Target Label=' '
+ 
+                                 Mean          Mean         Number of        Model
+   Range for Predicted          Target       Predicted    Observations       Score
+ 
+3051378.310 -  3207314.297    5865250.00    3177228.42           2        3129346.30
+2583570.348 -  2739506.335    2888000.00    2630167.24           1        2661538.34
+1959826.398 -  2115762.385    3019444.00    1979861.90           2        2037794.39
+1803890.410 -  1959826.398    1646600.00    1847677.81           6        1881858.40
+1647954.423 -  1803890.410    1584375.00    1736100.53           4        1725922.42
+1492018.436 -  1647954.423    1572725.00    1571833.15          12        1569986.43
+1336082.448 -  1492018.436    1417569.05    1399188.60          20        1414050.44
+1180146.461 -  1336082.448    1196359.44    1239907.02          30        1258114.45
+1024210.473 -  1180146.461    1118506.66    1091643.17          78        1102178.47
+868274.486 -  1024210.473      884612.80     936085.49         148         946242.48
+712338.499 -  868274.486       734597.27     782619.42         251         790306.49
+556402.511 -  712338.499       611820.98     628635.78         546         634370.50
+400466.524 -  556402.511       458286.62     472960.72         781         478434.52
+244530.536 -  400466.524       358318.62     331371.06         675         322498.53
+88594.549 -  244530.536        272498.46     198692.77         204         166562.54
+ 
+ 
+Data Role=VALIDATE Target Variable=price Target Label=' '
+ 
+                                    Mean       Mean         Number of        Model
+   Range for Predicted            Target     Predicted    Observations       Score
+ 
+3561377.002 -  3746814.073    2280000.00    3746814.07           1        3654095.54
+2077880.438 -  2263317.509          0.00    2246159.83           1        2170598.97
+1892443.367 -  2077880.438    2650000.00    1976074.31           2        1985161.90
+1707006.297 -  1892443.367    3200000.00    1860008.28           1        1799724.83
+1521569.226 -  1707006.297    2100666.67    1610332.98           6        1614287.76
+1336132.156 -  1521569.226    1525750.00    1401936.69          12        1428850.69
+1150695.085 -  1336132.156    1102141.50    1238955.40          26        1243413.62
+965258.015 -  1150695.085     1066671.42    1042771.42          53        1057976.55
+779820.944 -  965258.015       803045.61     861093.14         104         872539.48
+594383.874 -  779820.944       641830.32     681349.61         248         687102.41
+408946.803 -  594383.874       460742.97     499198.89         454         501665.34
+223509.733 -  408946.803       359042.09     323937.44         394         316228.27
+38072.662 -  223509.733        300853.57     180485.55          78         130791.20
