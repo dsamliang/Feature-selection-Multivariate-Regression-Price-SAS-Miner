@@ -1,1 +1,1 @@
-# Feature-selection-Multivariate-Regression-Sales-SAS-Miner-
+# Feature-selection-Multivariate-Regression-Sales-SAS-Miner
